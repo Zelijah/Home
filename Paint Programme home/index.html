@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Paint Programme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Paint.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>  
+    
+<body>
+
+    
+    <h1>Unleash Your Inner Da Vinci</h1>
+    
+    <!--Color Options For User with <img id>----------------------------->
+         
+    <div class="Toolbar">
+        - Pen Color -<br>
+        <img id="redPen" button type ="color" src="pen_red.gif" alt="Red Pen" onclick="changeColor('rgb(212,21,29)', this)">
+        <img id="greenPen" src="green%20pen%20gif.png" alt="Green Pen" height="48" width="48" onclick="changeColor('rgb(0,255,0)', this)">
+        <img id="bluePen" src="pen_blue.gif" alt="Blue Pen" onclick="changeColor('rgb(0,86,166)', this)">
+        <img id="Eraser" src="Erasr.png" alt="Eraser" height="48" width="48" onclick="changeColor('rgb(255,255,255)', this)">
+    </div> 
+    
+    
+    <div class="Toolbar">
+        - Pen Thickness -<br>
+        <img src="pen_thin_thickness.gif" alt="Thin Pen" onclick="changeThickness(1, this)">
+        <img src="pen_medium_thickness.gif" alt="Medium Pen" onclick="changeThickness(5, this)"> 
+        <img src="pen_thick_thicknes.gif" alt="Thick Pen" onclick="changeThickness(10, this)">
+    </div>
+    
+ <div class="CanvasContainer" > 
+     <div align="center">
+        <canvas id="drawingCanvas" width="470" height="400"></canvas>
+    </div> 
+    </div>
+    <div class="Toolbar">
+    - Operations -<br>
+    <button onclick="saveCanvas()">Save Your Art</button>
+    <button onclick="clearCanvas()">Reset Paint Sheet</button>
+    <div id="savedCopyContainer">
+      <img id="savedImageCopy"><br>
+      Right-click to save
+    </div>
+  </div>
+    
+    
+    
+</body>   
+</html>
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+      
