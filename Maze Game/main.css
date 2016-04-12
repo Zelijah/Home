@@ -1,0 +1,26 @@
+canvas {
+    background: white;
+        border: 6px none orange;
+    
+}
+
+img {
+    display: none;
+}
+
+button {
+    background-color: gainsboro;
+        color: black;
+    border-radius: 15px;
+        padding: 5px;
+    font-family: fantasy;
+        font-variant-caps: all-petite-caps;
+        font-size: 15px;
+        font-weight: 500;  
+  
+}
+
+button:hover {
+    background: rgb(255,165,0);
+
+}
